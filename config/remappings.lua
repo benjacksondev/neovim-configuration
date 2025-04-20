@@ -1,16 +1,6 @@
--- extra up to mapper function into utils..
-local which_key = require('which-key')
+local mapper = require('utl/mapper')
 
-local mapper = function(mapper_opts) 
-  return function(mode, key, cmd, desc) 
-    vim.keymap.set(mode, key, cmd, mapper_opts)
-    if desc then
-      which_key.add({ { key, desc = desc } })
-    end
-  end
-end
-
-local map = mapper({})
+local map = mapper({ noremap = true, silent = true })
 
 map('n', '<leader>v', [[<CMD>vs<CR>]], 'Vertical Split')
 
