@@ -19,4 +19,5 @@ map('n', '<leader>fh', builtin.help_tags, 'Telescope help tags')
 
 -- terminal
 map('n', '<leader>t', function() Snacks.terminal() end, 'Toggle Terminal')
+map('t', '<C-Space>', function() Snacks.terminal() end, '')
 
