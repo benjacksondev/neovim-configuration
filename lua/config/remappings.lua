@@ -17,3 +17,6 @@ map('n', '<leader>fg', builtin.live_grep, 'Telescope live grep')
 map('n', '<leader>fb', builtin.buffers, 'Telescope buffers')
 map('n', '<leader>fh', builtin.help_tags, 'Telescope help tags')
 
+-- terminal
+map('n', '<leader>t', function() Snacks.terminal() end, 'Toggle Terminal')
+
