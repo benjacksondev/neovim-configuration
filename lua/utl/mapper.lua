@@ -1,5 +1,3 @@
--- Credit to BodneyC for the h-order mapping function that also incorporates which_key
--- https://github.com/BodneyC/vim-neovim-config
 local which_key = require('which-key')
 
 return function(mapper_opts) 

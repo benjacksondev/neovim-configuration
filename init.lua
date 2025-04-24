@@ -1,9 +1,9 @@
-require('config.lazy')
+require("cfg.lazy")
 
-require('config.options')
-require('config.remappings')
-require('config.autocmds')
+require("cfg.options")
+require("cfg.remappings")
+require("cfg.autocmds")
 
-vim.lsp.enable('luals')
-vim.lsp.enable('gopls')
+vim.lsp.enable("luals")
+vim.lsp.enable("gopls")
 
