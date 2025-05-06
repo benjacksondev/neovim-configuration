@@ -11,14 +11,14 @@ map("n", "<leader>w", [[<CMD>w<CR>]], "Write")
 -- telescope remappings
 -- terminal
 map("n", "<leader>t", function()
-	snacks.terminal()
+	Snacks.terminal()
 end, "toggle terminal")
 
 map("t", "<c-a>", function()
-	snacks.terminal.toggle()
+	Snacks.terminal.toggle()
 end, "hide terminal")
 
 map("n", "<leader>g", function()
-	snacks.terminal.toggle("go run .")
+	Snacks.terminal.toggle("go run .")
 end)
 
